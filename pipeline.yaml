@@ -1,0 +1,7 @@
+name: test-app
+stages:
+  - name: dev
+    source:
+      repoURL: https://github.com/bigkevmcd/testing.git
+      path: deploy
+      targetRevision: master
