@@ -1,2 +1,2 @@
 person:
-  name: bigkevmcd/image-hooks:v0.3.0
+  name: $($params.new-image-url)
