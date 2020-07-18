@@ -1,2 +1,6 @@
 person:
-  name: bigkevmcd/image-hooks:v0.3.0
+  name:
+  - this
+  - is
+  - a
+  - test
