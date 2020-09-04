@@ -9,19 +9,19 @@ spec:
     matchLabels:
       app.kubernetes.io/name: taxi
       app.kubernetes.io/part-of: taxi
-      app.kubernetes.io/version: "0.0.3"
+      app.kubernetes.io/version: 0.0.3
   template:
     metadata:
       labels:
         app.kubernetes.io/name: taxi
         app.kubernetes.io/part-of: taxi
-        app.kubernetes.io/version: "0.0.3"
+        app.kubernetes.io/version: 0.0.3
     spec:
       containers:
-      - name: taxi
-        image: bigkevmcd/image-hooks:latest
+      - image: bigkevmcd/image-hooks:latest
         imagePullPolicy: Always
+        name: taxi
         ports:
-        - name: http
-          containerPort: 8080
+        - containerPort: 8080
+          name: http
           protocol: TCP
